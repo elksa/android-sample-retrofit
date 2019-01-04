@@ -1,6 +1,7 @@
 package elksa.com.sampleretrofit.model;
 
 import android.graphics.Bitmap;
+import android.support.annotation.NonNull;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -90,5 +91,11 @@ public class Book {
 
     public void setCover(Bitmap cover) {
         this.cover = cover;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return title;
     }
 }
